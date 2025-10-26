@@ -1,0 +1,53 @@
+/* external */
+
+
+h1 {
+    background-color: rgb(46, 56, 57);
+    color: white;
+    
+
+    /* border-style: solid;
+    border-color: black;
+    margin-bottom: 50px; */
+
+    border: px dotted black;
+
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px; */
+
+    padding: 15px;
+
+}
+
+.istisna {
+    background-color: rgb(109, 108, 108);
+    color: white;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 25px;
+    background-color: rgb(172, 171, 171);
+    color: white;
+    padding: 10px;
+    border-width:3px ;
+    border-style: solid;
+    border-color: black;
+}
+
+.istisna2 {
+    font-size: 17px;
+}
+
+p2 {
+    background-color: rgb(46, 56, 57);
+    color: white;
+    border: px dotted black;
+    
+    padding: 25px;
+    padding-right: 1301px;
+}

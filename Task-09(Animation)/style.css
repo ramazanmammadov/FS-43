@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    background-color: rgb(26, 154, 201);
+    place-items: center;
+    place-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+}
+
+.conteiner {
+    border: solid 1px white;
+}
+
+.image {
+    width: 16rem;
+    border: solid 1px white;
+}
+
+.image-line {
+    display: flex;
+}
+
+.line-1 .img-1-1 {
+    animation: img-1-1 2s 1s forwards;
+}
+
+@keyframes img-1-1 {
+    50% {
+        transform: translate(100%)
+    }
+    100% {
+        transform: translate(100%, 100%)  ;
+    }
+}
+
+.line-1 .img-1-2 {
+    animation: img-1-2 2s 1s forwards;
+}
+
+@keyframes img-1-2 {
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+.line-1 .img-1-3 {
+    animation: img-1-3 2s 1s forwards;
+}
+
+@keyframes img-1-3 {
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.line-2 .img-2-1 {
+    animation: img-2-1 2s 1s forwards;
+}
+
+@keyframes img-2-1 {
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.line-2 .img-2-2 {
+    animation: img-2-2 2s 1s forwards;
+}
+
+@keyframes img-2-2 {
+    50% {
+        transform: translateY(100%)
+    }
+
+    100% {
+        transform: translate(100%, 100%);
+    }
+}
+
+.line-2 .img-2-3 {
+    animation: img-2-3 2s 1s forwards;
+}
+
+@keyframes img-2-3 {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.line-3 .img-3-1 {
+    animation: img-3-1 2s 1s forwards;
+}
+
+@keyframes img-3-1 {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.line-3 .img-3-2 {
+    animation: img-3-2 2s 1s forwards;
+}
+
+@keyframes img-3-2 {
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+.line-3 .img-3-3 {
+    animation: img-3-3 2s 1s forwards;
+}
+
+@keyframes img-3-3 {
+    100% {
+        transform: translate(-100%);
+    }
+}
+

@@ -76,6 +76,6 @@ main {
     transition: 0.7s;
 }
 
-.grid-items:hover{
+.grid-items:hover {
     transform: scale(1.1);
 }

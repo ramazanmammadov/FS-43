@@ -9,8 +9,8 @@ console.log(`My name is ${name}`);
 
 
 // Task-3.
+
 // let person = "sdzexcfygjvj";
-// let console = "sedrftgyhujiko";
 // let $add = "xrcytvuhijk";
 
 
@@ -29,8 +29,10 @@ console.log(msSpeed);
 
 
 // Task-6.
+let birthDate = +prompt("Doğum tarixini il olaraq daxil edin(YYYY)");
+let result = (2025 - birthDate) * 365;
 
-
+console.log(result);
 
 
 // Task-7.
@@ -58,11 +60,8 @@ console.log(`Salam, ${Name}!`);
 
 
 // Task-10.
-let num1 = prompt("Birinci ədədi daxil edin:");
-let num2 = prompt("İkinci ədədi daxil edin:");
-
-num1 = Number(num1);
-num2 = Number(num2);
+let num1 = Number(prompt("Birinci ədədi daxil edin:"));
+let num2 = Number(prompt("İkinci ədədi daxil edin:"));
 
 let sum = num1 + num2;
 let difference = num1 - num2;
@@ -76,14 +75,19 @@ console.log("Bölmə:", quotient);
 
 
 // Task-11.
+let rate = 10;
 
+let principal = Number(prompt("Əmanətin məbləğini daxil edin (AZN):"));
+let years = Number(prompt("Müddəti daxil edin (il olaraq):"));
 
+let profit = (principal * rate * years) / 100;
+let total = principal + profit;
+
+console.log(`${years} il müddətində qoyduğunuz məbləğin ${rate}% dərəcəsi ilə gözlənilən məbləğ ${total} AZN-dir.`);
 
 
 // Task-12.
-let age = prompt("Yaşınızı daxil edin:");
-
-age = Number(age);
+let age = Number(prompt("Yaşınızı daxil edin:"));
 
 if (age < 16) {
   alert("Access denied");
@@ -93,8 +97,13 @@ if (age < 16) {
 
 
 // Task-13.
+let year = Number(prompt("Bir il daxil edin:"));
 
-
+if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+  console.log(year + " ili uzun ildir (366 gün).");
+} else {
+  console.log(year + " ili uzun il deyil (365 gün).");
+}
 
 
 // Task-14.
@@ -119,3 +128,45 @@ switch (id) {
 
 
 // Task-15.
+let monthNumber = Number(prompt("Ayın nömrəsini daxil edin (1-12):"));
+
+switch (monthNumber) {
+  case 1:
+    console.log("Yanvar");
+    break;
+  case 2:
+    console.log("Fevral");
+    break;
+  case 3:
+    console.log("Mart");
+    break;
+  case 4:
+    console.log("Aprel");
+    break;
+  case 5:
+    console.log("May");
+    break;
+  case 6:
+    console.log("İyun");
+    break;
+  case 7:
+    console.log("İyul");
+    break;
+  case 8:
+    console.log("Avqust");
+    break;
+  case 9:
+    console.log("Sentyabr");
+    break;
+  case 10:
+    console.log("Oktyabr");
+    break;
+  case 11:
+    console.log("Noyabr");
+    break;
+  case 12:
+    console.log("Dekabr");
+    break;
+  default:
+    console.log("Düzgün ay nömrəsi daxil edilməyib!");
+}

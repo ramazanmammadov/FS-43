@@ -1,5 +1,5 @@
 // Task-1.
-let score = Number(prompt("İmtahan nəticəsini daxil edin (0-100):"));
+let score = +prompt("İmtahan nəticəsini daxil edin (0-100):");
 
 let grade;
 if (score >= 90) {
@@ -28,7 +28,7 @@ console.log("Şərh:", comment);
 
 
 // Task-2.
-let temp = Number(prompt("Havanın temperaturunu daxil edin (°C):"));
+let temp = +prompt("Havanın temperaturunu daxil edin (°C):");
 
 if (temp > 25) {
   alert("Hava isti");
@@ -42,7 +42,7 @@ if (temp > 25) {
 
 
 // Task-3.
-let num = Number(prompt("Bir rəqəm daxil edin:"));
+let num = +prompt("Bir rəqəm daxil edin:");
 
 if (num % 2 === 0) {
   console.log(num + " cüt ədəddir.");

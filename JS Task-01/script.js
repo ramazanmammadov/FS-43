@@ -60,8 +60,8 @@ console.log(`Salam, ${Name}!`);
 
 
 // Task-10.
-let num1 = Number(prompt("Birinci ədədi daxil edin:"));
-let num2 = Number(prompt("İkinci ədədi daxil edin:"));
+let num1 = +prompt("Birinci ədədi daxil edin:");
+let num2 = +prompt("İkinci ədədi daxil edin:");
 
 let sum = num1 + num2;
 let difference = num1 - num2;
@@ -77,8 +77,8 @@ console.log("Bölmə:", quotient);
 // Task-11.
 let rate = 10;
 
-let principal = Number(prompt("Əmanətin məbləğini daxil edin (AZN):"));
-let years = Number(prompt("Müddəti daxil edin (il olaraq):"));
+let principal = +prompt("Əmanətin məbləğini daxil edin (AZN):");
+let years = +prompt("Müddəti daxil edin (il olaraq):");
 
 let profit = (principal * rate * years) / 100;
 let total = principal + profit;
@@ -87,7 +87,7 @@ console.log(`${years} il müddətində qoyduğunuz məbləğin ${rate}% dərəc�
 
 
 // Task-12.
-let age = Number(prompt("Yaşınızı daxil edin:"));
+let age = +prompt("Yaşınızı daxil edin:");
 
 if (age < 16) {
   alert("Access denied");
@@ -97,7 +97,7 @@ if (age < 16) {
 
 
 // Task-13.
-let year = Number(prompt("Bir il daxil edin:"));
+let year = +prompt("Bir il daxil edin:");
 
 if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
   console.log(year + " ili uzun ildir (366 gün).");
@@ -128,7 +128,7 @@ switch (id) {
 
 
 // Task-15.
-let monthNumber = Number(prompt("Ayın nömrəsini daxil edin (1-12):"));
+let monthNumber = +prompt("Ayın nömrəsini daxil edin (1-12):");
 
 switch (monthNumber) {
   case 1:

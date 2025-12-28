@@ -61,7 +61,7 @@
 
 
 // Task-13.
-// let num =+(prompt("Bir ədəd daxil edin:"));
+// let num = +prompt("Bir eded daxil edin:");
 
 // let factorial = 1;
 

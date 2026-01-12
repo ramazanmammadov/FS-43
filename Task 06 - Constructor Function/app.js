@@ -60,7 +60,7 @@ const calculator = {
     return a * b;
   },
   divide(a, b) {
-    return b === 0 ? "0-a bölmək olmaz" : a / b;
+    return a / b;
   },
   clearMemory() {
     this.memory = 0;

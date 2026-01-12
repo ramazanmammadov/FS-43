@@ -49,6 +49,7 @@
 // Task-02
 
 const calculator = {
+  memory: 0,
   sum(a, b) {
     return a + b;
   },
@@ -61,8 +62,15 @@ const calculator = {
   divide(a, b) {
     return b === 0 ? "0-a bölmək olmaz" : a / b;
   },
-
-  
+  clearMemory() {
+    this.memory = 0;
+  },
+  addToMemory(value) {
+    this.memory += value;
+  },
+  recallMemory() {
+    return this.memory;
+  }
 }
 
 console.log(calculator.sum(5, 3));      
@@ -70,3 +78,5 @@ console.log(calculator.minus(10, 4));
 console.log(calculator.multiply(6, 7)); 
 console.log(calculator.divide(20, 4)); 
 console.log(calculator.divide(10, 0)); 
+console.log(calculator.addToMemory(25));
+console.log(calculator.recallMemory()); 

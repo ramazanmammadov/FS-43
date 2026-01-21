@@ -2,12 +2,15 @@
 // function dnaComplement(dna) {
 //   let result = "";
 
-//   for (let c of dna) {
+//   for (let i = 0; i < dna.length; i++) {
+//     const c = dna[i];
+
 //     if (c === "A") result += "T";
 //     else if (c === "T") result += "A";
 //     else if (c === "C") result += "G";
 //     else if (c === "G") result += "C";
 //   }
+
 //   return result;
 // }
 // console.log(dnaComplement("ATCG"));
@@ -20,9 +23,10 @@
 //   if (!text || !char) return "";
 
 //   let result = "";
-//   for (let _ of text) {
+//   for (let i = 0; i < text.length; i++) {
 //     result += char;
 //   }
+
 //   return result;
 // }
 // console.log(replaceAll("hello", "*"));
@@ -34,14 +38,15 @@
 // function extractNumber(text) {
 //   let result = "";
 
-//   for (let c of text) {
+//   for (let i = 0; i < text.length; i++) {
+//     const c = text[i];
+
 //     if (c >= "0" && c <= "9") {
 //       result += c;
 //     }
 //   }
 //   return +result;
 // }
-
 // console.log(extractNumber("ab1c2d3ef"));
 // console.log(extractNumber("no digits here"));
 // console.log(extractNumber("2026 is the year"));
@@ -51,11 +56,14 @@
 // function removeExclamationMarks(sentence) {
 //   let result = "";
 
-//   for (let c of sentence) {
+//   for (let i = 0; i < sentence.length; i++) {
+//     const c = sentence[i];
+
 //     if (c !== "!") {
 //       result += c;
 //     }
 //   }
+
 //   return result + "!";
 // }
 // console.log(removeExclamationMarks("Hi!"));
@@ -70,13 +78,17 @@
 // function removeDigits(text) {
 //   let result = "";
 
-//   for (let c of text) {
+//   for (let i = 0; i < text.length; i++) {
+//     const c = text[i];
+
 //     if (c < "0" || c > "9") {
 //       result += c;
 //     }
 //   }
+
 //   return result;
 // }
+
 // console.log(removeDigits("! !"));
 // console.log(removeDigits("123456789"));
 // console.log(removeDigits("This looks5 grea8t!"));

@@ -1,12 +1,12 @@
 const colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF'];
 
-const button = document.getElementById("btn");
-const colorSpan = document.getElementById("colorCode");
+const btn = document.getElementById("btn");
+const span = document.getElementById("colorCode");
 
-button.addEventListener("click", () => {
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  const randomColor = colors[randomIndex];
+btn.onclick = function () {
+  const index = Math.floor(Math.random() * 4);
+  const color = colors[index];
 
-  document.body.style.backgroundColor = randomColor;
-  colorSpan.textContent = randomColor;
-});
+  document.body.style.backgroundColor = color;
+  span.innerText = color;
+};
